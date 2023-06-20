@@ -24,7 +24,7 @@
     <!--nav section-->
     <div class="header">
         <div class="logo">
-            <h1>Coach <span>Comfort</span></h1> 
+            <h1>Comfort <span>AirLine.</span></h1> 
         </div>
         <div class="navs">
             <ul>
@@ -37,7 +37,7 @@
             </ul>
         </div>
         <div class="user-icon">
-            <i class="fa-solid fa-user"></i>
+            <a href="#login"><i class="fa-solid fa-user"></i></a>
         </div>
     </div>
 
@@ -49,6 +49,51 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatem unde nobis, 
             ullam ex minus quibusdam reiciendis nulla perferendis.</p>
         </div>
+        <div class="login" id="login">
+            <div class="login-content">
+                <h2>Login</h2>
+                <div class="form-Login">
+                    <form action="" method="">
+                        <p>Username</p>
+                        <input type="text" name="username" placeholder="Username">
+                        <p>Password</p>
+                        <input type="password" name="password" placeholder="Password">
+                        <div class="check-box">
+                            <div class="input-check">
+                                <input type="checkbox" name="remember" id="remember"><p>Remember me</p>
+                            </div>
+                        </div>
+                        <p>
+                        <button type="submit">Login</button>
+                        </p>
+                        <p>
+                            <a href="#signup">Don't have an account? Sign up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--<div class="login" id="login">
+            <div class="login-content">
+                <h2>Sign up</h2>
+                <div class="form-container">
+                    <form action="" method="">
+                        <p>Name</p>
+                        <input type="text" name="username" placeholder="Username">
+                        <p>Email</p>
+                        <input type="email" name="password" placeholder="Enter email">
+                        <p>Password</p>
+                        <input type="password" name="password" placeholder="Password">
+                        <p>
+                        <button type="submit">sign up</button>
+                        </p>
+                        <p>
+                            <a href="#signup">Already have an account? Login</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>-->
     </div>
     <!--About section-->
     <div class="about" id="about">
@@ -175,10 +220,80 @@
                 <h2 class="text">China</h2>
             </div>
         </div>    
+    </div>
+    </div>
 
+    <!--Dashboard section-->
+    <div class="dash-board" id="dashboard">
+        <div class="dash-content">
+            <h1>Search your Tour</h1>
+            <div class="form-container">
+                <form action="">
+                    <p>From</p>
+                    <input type="text" name="from" placeholder="Enter your starting point">
+                    <p>Where to</p>
+                    <input type="text" placeholder="Enter place name" required>
+                    <p>When</p>
+                    <input type="date" placeholder="dd/mm/yr" required>
+                    <p>How many people</p>
+                    <input type="number" placeholder="Enter number of people" required>
+                    <div class="form-button">
+                        <button type="submit">search</button>
+                    </div>
+                </form>
+            </div>
         </div>
+    </div>
 
-
+    <!--contact section-->
+    <div class="contact" id="contact">
+        <div class="contact-content">
+            <h1>Contact us</h1>
+            <div class="contact-details">
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65345644.82751399!2d-26.77067773002614!3d1.5376370308186642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10a06c0a948cf5d5%3A0x108270c99e90f0b3!2sAfrica!5e0!3m2!1sen!2ske!4v1685710984330!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="contact-form">
+                    <form action="">
+                        <p>
+                            <input type="text" placeholder="Enter your name" required>
+                        </p>
+                        <p>
+                            <input type="email" placeholder="Enter your email" required>
+                        </p>
+                        <p>
+                            <input type="tel" name="phone" pattern="[1-9]{1}[0-9]{9}" placeholder="Enter your contact" required>
+                        </p>
+                        <p>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+                        </p>
+                        <div>
+                            <button type="submit">send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="details">
+                <div class="details-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>Phone number</h2>
+                    <p>+254 735-565-242</p>
+                    <p>+123 346 766 89</p>
+                </div>
+                <div class="details-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>Email Address</h2>
+                    <p>airline@gmail.com</p>
+                    <p>comfortairline@gmail.com</p>
+                </div>
+                <div class="details-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2>office Address</h2>
+                    <p>p.o box 45446</p>
+                    <p>p.o box 85658 Nairobi</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
