@@ -16,9 +16,6 @@
 
 <!--css-->
 <link rel="stylesheet" href="style.css">
-
-<!--javascript-->
-<script src="script.js" defer></script>
 </head>
 <body>
     <!--nav section-->
@@ -37,20 +34,25 @@
             </ul>
         </div>
         <div class="user-icon">
-            <a href="#login"><i class="fa-solid fa-user"></i></a>
+            <button id="open-btn">Login</button>
         </div>
     </div>
 
     <!--hero section-->
     <div class="home" id="home">
-        <div class="home-content">
-            <h2>Welcome to <span>Coach Comfort</span></h2>
-            <h2>Your comfort and safety is our priority</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatem unde nobis, 
-            ullam ex minus quibusdam reiciendis nulla perferendis.</p>
+        <div class="home-text">
+            <div class="home-content">
+                <h2>Welcome to <span>Coach Comfort</span></h2>
+                <h2>Your comfort and safety is our priority</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi voluptatem unde nobis, 
+                ullam ex minus quibusdam reiciendis nulla perferendis.</p>
+            </div>
         </div>
         <div class="login" id="login">
-            <div class="login-content">
+            <div class="login-content" id="login-content">
+                <div class="icon-close">
+                    <i class="fa fa-times" id="close-btn"></i>
+                </div>
                 <h2>Login</h2>
                 <div class="form-Login">
                     <form action="" method="">
@@ -60,23 +62,32 @@
                         <input type="password" name="password" placeholder="Password">
                         <div class="check-box">
                             <div class="input-check">
-                                <input type="checkbox" name="remember" id="remember"><p>Remember me</p>
+                                <div class="confirm">
+                                    <div class="confirm-check">
+                                        <input  type="checkbox" name="remember" id="remember">
+                                    </div>
+                                    <div class="confirm-text">
+                                        <p>Remember me</p>
+                                    </div>
+                                </div>
+                                <div class="forgot-pwd">
+                                    Forgot password?<br><a href="#">Click here!</a>
+                                </div>
                             </div>
                         </div>
                         <p>
                         <button type="submit">Login</button>
                         </p>
-                        <p>
-                            <a href="#signup">Don't have an account? Sign up</a>
-                        </p>
+                        <div class="signup-link" id="sign-link">
+                            <p>Don't Have An Account Yet?</p>
+                            <a href="#signup">Sign up</a>
+                        </div>
                     </form>
                 </div>
             </div>
-        </div>
-        <!--<div class="login" id="login">
-            <div class="login-content">
+            <div class="signup-content" id="sign-up">
                 <h2>Sign up</h2>
-                <div class="form-container">
+                <div class="form-Login">
                     <form action="" method="">
                         <p>Name</p>
                         <input type="text" name="username" placeholder="Username">
@@ -85,15 +96,16 @@
                         <p>Password</p>
                         <input type="password" name="password" placeholder="Password">
                         <p>
-                        <button type="submit">sign up</button>
+                            <button type="submit">sign up</button>
                         </p>
-                        <p>
-                            <a href="#signup">Already have an account? Login</a>
-                        </p>
+                        <div class="login-link" id="login-link">
+                            <p>Already have an account?</p>
+                            <a href="#signup">Login</a>
+                        </div>
                     </form>
                 </div>
             </div>
-        </div>-->
+        </div>
     </div>
     <!--About section-->
     <div class="about" id="about">
@@ -295,5 +307,6 @@
             </div>
         </div>
     </div>
+    <script src="java.js"></script>
 </body>
 </html>
